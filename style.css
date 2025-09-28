@@ -13,12 +13,12 @@ h2 {
     font-size: 2.5rem;
 }
 
-p {
+p, li {
     font-size: 1.3rem;
 }
 
 .navbar {
-    background: #000; /* Black for bold contrast */
+    background: #1f1e26; /* Black for bold contrast */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -34,6 +34,15 @@ p {
 .navbar-brand {
     font-weight: 900;
     font-size: 1.8rem; /* Large brand name */
+}
+
+a.navbar-brand {
+    color: #a2d43d;
+}
+
+a.navbar-brand:hover {
+    color: #fff;
+    transition: 1s;
 }
 
 header {
@@ -63,31 +72,31 @@ header p {
 }
 
 header a {
-    color: #fff;
-    padding: 12px 30px;
+    color: #333;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 header a:hover {
-    background: #c0392b; /* Darken on hover */
+    color: limegreen; }
+
+
+.btn-success {
+    font-size: 0.8em;
 }
 
 section {
-    padding: 60px 20px;
+    padding: 35px 20px;
     margin: auto;
 }
 
-.services, .portfolio, .testimonials {
+.services, .testimonials {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
 }
 
-.service-item, .portfolio-item {
+.service-item, {
     flex: 1 1 calc(33.333% - 20px);
     background: #ffffff;
     padding: 30px;
@@ -101,7 +110,7 @@ section {
 }
 
 .card img {
-    width: 300px; 
+    width: 200px; 
     height: auto;
 }
 
@@ -115,25 +124,137 @@ footer {
 
 .cta {
     text-align: center;
-    margin: 40px 0;
 }
 
 .cta a {
-    color: #fff;
-    background: #3498db;
+    color: #000;
+    background: #a2d43d; /* green color */
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
+    border-color: #000;
+    border-width: 1px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .cta a:hover {
-    background: #2980b9; /* Darker blue on hover */
+    background: #1f1e26; 
 }
-
 
 h2 {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+.audience .card {
+    max-width: 400px;
+}
+
+li, ul {
+    font-size: 1.3rem;
+    padding: 0.2em;
+    list-style: none;
+    padding-left: 0;
+}
+
+.audience li {
+    margin: 8px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* circular icon background */
+.audience .icon-wrap {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f3f4f6; /* soft neutral */
+}
+
+/* tighten title spacing */
+.audience .card-title { margin-bottom: .25rem; }
+
+/* responsive tweak: reduce icon size on small screens */
+@media (max-width: 575px) {
+  .audience .icon-wrap { width: 48px; height: 48px; }
+  .audience .fa-2x { font-size: 1.25rem; }
+}
+
+.strength i {
+    color: #8ac926;
+}
+
+.accordion-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-header {
+    padding: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #dee2e6;
+    color: #000;
+}
+
+.accordion-button:hover, .accordion-header:hover {
+    background-color: #e9ecef;
+    transition: 0.2s;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.accordion-body ul, li {
+    font-size: 1.2rem;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+.final-cta h2 {
+  font-size: 3rem; /* bigger headline */
+}
+
+.final-cta p {
+  font-size: 1.5rem;
+}
+
+.final-cta .cta a {
+  display: inline-block;
+  font-size: 1.3rem;   /* bigger text */
+  font-weight: 600;
+  padding: 14px 32px;  /* more clickable */
+  background-color: #8BC34A; /* your green */
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.final-cta .cta a:hover {
+  background-color: #7CB342; /* darker on hover */
+  transform: translateY(-2px);
+  color: #fff;
+  border-color: #fff;
 }
