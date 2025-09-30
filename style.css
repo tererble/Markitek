@@ -24,11 +24,20 @@ p, li {
 
 .navbar a {
     color: #fff;
-    font-weight: 600; /* Slightly bold for readability */
+    /*font-weight: 600;  Slightly bold for readability */
+}
+
+.navbar a:hover {
+    color: #a2d43d;
 }
 
 .navbar a.active {
     color: #fff; /* Keep active link white */
+}
+
+.navbar ul, li {
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-brand {
@@ -37,23 +46,23 @@ p, li {
 }
 
 a.navbar-brand {
-    color: #a2d43d;
+    color: #fff;
 }
 
 a.navbar-brand:hover {
-    color: #fff;
+    color: #a2d43d;
     transition: 1s;
 }
 
 header {
-    background: #fff; /*  Lighter tone for contrast*/
-    color: #222; /* Dark text for readability */
-    padding: 100px 20px; /* More padding for emphasis */
+    background: #fff; 
+    color: #222;
+    padding: 100px 20px; 
     text-align: left;
     min-height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    justify-content: center; 
     font-weight: thin;
 }
 
@@ -62,7 +71,11 @@ header h1 {
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.2;
-    color: #000; /* Strong contrast for heading */
+    color: #000;
+}
+
+header h3 {
+        line-height: 2.5rem;
 }
 
 header p {
@@ -71,17 +84,24 @@ header p {
     color: #555; /* Softened text color */
 }
 
-header a {
-    color: #333;
-    text-decoration: none;
+.btn {
+    color: #000;
+    font-size: 1.5rem;
+    padding: .8rem 2rem;
+    margin: 0 1rem ;
+    text: uppercase;
 }
 
-header a:hover {
-    color: limegreen; }
-
+.btn-success {
+    background-color: #a2d43d;
+    border-color: #000;
+}
 
 .btn-success {
-    font-size: 0.8em;
+    background-color: #a2d43d;
+}
+
+.btn-success:hover {
 }
 
 section {
@@ -124,22 +144,6 @@ footer {
 
 .cta {
     text-align: center;
-}
-
-.cta a {
-    color: #000;
-    background: #a2d43d; /* green color */
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    border-color: #000;
-    border-width: 1px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.cta a:hover {
-    background: #1f1e26; 
 }
 
 h2 {
@@ -189,6 +193,10 @@ strong {
     color: #8ac926;
 }
 
+.accordion-button i {
+    padding-left: .5rem;
+}
+
 .accordion-button {
     width: 100%;
     display: flex;
@@ -223,22 +231,16 @@ strong {
 .accordion-body {
     padding: 0;
     padding-left: 1rem;
+    padding-top: 1rem;
 }
 
 .accordion-body ul, li {
     font-size: 1.2rem;
     padding: 0;
     list-style-position: inside;
-    list-style-type: circle;
+    list-style-type: square;
 }
 
-.final-cta h2 {
-  font-size: 3rem; /* bigger headline */
-}
-
-.final-cta p {
-  font-size: 1.5rem;
-}
 
 .final-cta .cta a {
   display: inline-block;
