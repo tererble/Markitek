@@ -18,8 +18,8 @@ p, li {
 }
 
 .navbar {
-    background: #1f1e26; /* Black for bold contrast */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background: #1f1e26;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar a {
@@ -32,7 +32,7 @@ p, li {
 }
 
 .navbar a.active {
-    color: #fff; /* Keep active link white */
+    color: #fff; 
 }
 
 .navbar ul, .navbar li {
@@ -48,7 +48,7 @@ p, li {
 
 .navbar-brand {
     font-weight: 900;
-    font-size: 1.8rem; /* Large brand name */
+    font-size: 1.8rem; 
 }
 
 a.navbar-brand {
@@ -62,7 +62,7 @@ a.navbar-brand:hover {
 
 header {
     /*background: #fff; */
-    background: url(asset/img/house-project-render.jpg);
+    background: url(asset/img/technical-drawing-background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255,255,255,1);
+  background: rgba(255,255,255,.8);
   z-index: 1;
 }
 
@@ -103,12 +103,16 @@ header h3 {
 header p {
     margin: 10px 0 30px;
     font-size: 1.2rem;
-    color: #555; /* Softened text color */
+    color: #555; 
 }
 
 /*.hero h1, .hero h2, .hero h3, .hero h4, .hero p, .hero a {
     color: #fff;
 }*/
+
+.hero h1, .hero h2, .hero h3, .hero h4, .hero p {
+    background-color: #fff;
+}
 
 .hero .container {
     z-index: 2;
@@ -127,13 +131,14 @@ header p {
     border-color: #000;
 }
 
-.btn-success {
-    background-color: #a2d43d;
-}
-
 .btn-success:hover {
     background-color: #7CB342;
     border-color: #FFF;
+}
+
+.btn-light {
+    border-color: #000;
+    background-color: #fff;
 }
 
 section {
@@ -154,11 +159,11 @@ section {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .service-item:hover, .portfolio-item:hover {
-    transform: translateY(-10px); /* Lift effect */
+    transform: translateY(-10px); 
 }
 
 .card img {
