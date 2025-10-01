@@ -35,9 +35,15 @@ p, li {
     color: #fff; /* Keep active link white */
 }
 
-.navbar ul, li {
+.navbar ul, .navbar li {
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+.nav-item li {
+    list-style: none;
+
 }
 
 .navbar-brand {
@@ -55,7 +61,11 @@ a.navbar-brand:hover {
 }
 
 header {
-    background: #fff; 
+    /*background: #fff; */
+    background: url(asset/img/house-project-render.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #222;
     padding: 100px 20px; 
     text-align: left;
@@ -64,6 +74,18 @@ header {
     flex-direction: column;
     justify-content: center; 
     font-weight: thin;
+    position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  z-index: 1;
 }
 
 header h1 {
@@ -84,6 +106,14 @@ header p {
     color: #555; /* Softened text color */
 }
 
+/*.hero h1, .hero h2, .hero h3, .hero h4, .hero p, .hero a {
+    color: #fff;
+}*/
+
+.hero .container {
+    z-index: 2;
+}
+
 .btn {
     color: #000;
     font-size: 1.5rem;
@@ -102,6 +132,8 @@ header p {
 }
 
 .btn-success:hover {
+    background-color: #7CB342;
+    border-color: #FFF;
 }
 
 section {
@@ -136,10 +168,10 @@ section {
 
 footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 10px 10px;
     background: #222;
     color: #fff;
-    margin-top: 80px; /* Space above footer */
+    margin-top: 80px; 
 }
 
 .cta {
@@ -170,20 +202,17 @@ strong {
     font-weight: bold;
 }
 
-/* circular icon background */
 .audience .icon-wrap {
   width: 60px;
   height: 60px;
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #f3f4f6; /* soft neutral */
+  background: #f3f4f6;
 }
 
-/* tighten title spacing */
 .audience .card-title { margin-bottom: .25rem; }
 
-/* responsive tweak: reduce icon size on small screens */
 @media (max-width: 575px) {
   .audience .icon-wrap { width: 48px; height: 48px; }
   .audience .fa-2x { font-size: 1.25rem; }
@@ -242,20 +271,19 @@ strong {
 }
 
 
-.final-cta .cta a {
-  display: inline-block;
-  font-size: 1.3rem;   /* bigger text */
+ .cta a {
+  font-size: 1.3rem; 
   font-weight: 600;
-  padding: 14px 32px;  /* more clickable */
-  background-color: #8BC34A; /* your green */
+  padding: 14px 32px;  
+  background-color: #8BC34A; 
   color: #000;
   border-radius: 8px;
+  border-color: #000;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.final-cta .cta a:hover {
-  background-color: #7CB342; /* darker on hover */
+ .cta a:hover {
+  background-color: #7CB342;
   transform: translateY(-2px);
   color: #fff;
   border-color: #fff;
