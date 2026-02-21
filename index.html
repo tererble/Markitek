@@ -27,16 +27,25 @@
     <a class="navbar-brand" href="#">MARKITEK</a>
 	    <div class="collapse navbar-collapse container" id="navbarNav">
 	      <ul class="navbar-nav">
-	        <li class="nav-item">
-	          <a class="nav-link" href="#portfolio">Portfolio</a>
+	        <li class="nav-item px-2">
+	          <a class="nav-link" href="#">Drawing & Submission</a>
 	        </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#strength">Features</a>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="design.html">3D Design & Rendering</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            <!-- <li class="nav-item px-2">
+              <a class="nav-link" href="#contact">Article</a>
+            </li> -->
 	      </ul>
+        <!-- <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">EN</a>
+          </li>
+          <p class="text-white" >/</p>
+          <li class="nav-item">
+            <a class="nav-link" href="/drafting-bm">BM</a>
+          </li>
+        </ul> -->
 	    </div>
     </div>
 	</nav>
@@ -57,14 +66,14 @@
           <h2 class="text-center">What We Do</h2>
           <div class="card-group justify-content-center">
             <div class="card border-white align-items-center m-3 rounded-4 shadow">
-              <img src="asset/img/s1.png" class="card-img-top img-fluid" alt="plan drawing">
+              <img src="asset/img/w1.png" class="card-img-top img-fluid" alt="plan drawing">
               <div class="card-body">
                 <h3 class="card-title text-center"><strong>Plan Drawing</strong></h3>
                 <p class="card-text text-center m-2">Drafting of technical drawings, which include floor plans, elevations, sections, and required detail drawings.</p>
               </div>
             </div>
             <div class="card border-white align-items-center m-3 rounded-4 shadow">
-              <img src="asset/img/s2.png" class="card-img-top img-fluid" alt="authority submission">
+              <img src="asset/img/w3.png" class="card-img-top img-fluid" alt="authority submission">
               <div class="card-body">
                 <h3 class="card-title text-center"><strong>Submission & Approval</strong></h3>
                 <p class="card-text text-center  m-2">Preparing documents, drawings, and relevant authority requirements, for submission to local authority for approval.</p>
@@ -76,34 +85,62 @@
 
   <section id="portfolio">
       <div class="container">
-          <h2 class="text-center mb-3">Past Projects</h2>
+          <h2 class="text-center mb-3">Sample Projects</h2>
           <div class="row portfolio g-5">
 
             <div class="col-md-6">
               <div class="bg-white p-3 rounded-4 shadow">
                 <h3 class="text-center my-3"><strong>Sungai Buloh House</strong></h3>
-                <img src="asset/img/sungai-buloh-house-drawing.png" class="img-fluid" alt="Sungai Buloh House Plan Drawing">
+                <img 
+                src="asset/img/sungai-buloh-house-drawing.png" 
+                class="img-fluid" 
+                alt="Sungai Buloh House Plan Drawing"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSungaiBulohHouse"
+                >
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="bg-white p-3 rounded-4 shadow">
                 <h3 class="text-center my-3"><strong>Pangsenam Mosque, Temerloh</strong></h3>
-                <img src="asset/img/temerloh-madrasah-submission-drawing.png" class="img-fluid" alt="Pangsenam Mosque Plan Drawing">
+                <img 
+                src="asset/img/temerloh-madrasah-submission-drawing.png" 
+                class="img-fluid" 
+                alt="Pangsenam Mosque Plan Drawing"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-madrasah"
+                >
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="bg-white p-3 rounded-4 shadow">
-                <h3 class="text-center my-3"><strong>Sungai Buloh Factory Lot</strong></h3>
-                <img src="asset/img/sungai-buloh-factory-submission-drawing-majlis.png" class="img-fluid" alt="Sungai Buloh Factory Plan Drawing">
+                <h3 class="text-center my-3"><strong>Rawang Shoplot</strong></h3>
+                <img 
+                src="asset/img/shoplot-stack.jpg" 
+                class="img-fluid" 
+                alt="Rawang Shoplot Plan Drawing"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-shoplot"
+                >
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="bg-white p-3 rounded-4 shadow">
                 <h3 class="text-center my-3"><strong>Subang Terrace Factory</strong></h3>
-                <img src="asset/img/subang-factory-submission-drawing-majlis.png" class="img-fluid" alt="Subang Terrace Factory Plan Drawing">
+                <img 
+                src="asset/img/subang-factory-submission-drawing-majlis.png" 
+                class="img-fluid" 
+                alt="Subang Terrace Factory Plan Drawing"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-factory"
+                >
               </div>                              
             </div>
 
@@ -111,14 +148,157 @@
       </div>
   </section>
 
+  <section>
+    
+    <div class="modal fade" id="modalSungaiBulohHouse" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-4">
+          <div class="modal-header text-center border-0">
+            <h4 class="modal-title fw-bold w-100">Sungai Buloh House</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="asset/img/house/House-1.jpg"
+              class="img-fluid mb-4"
+              alt="Sungai Buloh House Plan Drawing"
+            >
+            <img
+              src="asset/img/house/House-2.jpg"
+              class="img-fluid mb-4"
+              alt="Sungai Buloh House Plan Drawing"
+            >
+            <div class="text-center">
+              <p>Construction drawing for single-storey house project on private lot in Sungai Buloh</p>
+            </div>
+          </div>
+          <!-- <div class="modal-footer border-0">
+            <button class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-madrasah" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-4">
+          <div class="modal-header text-center border-0">
+            <h4 class="modal-title fw-bold w-100">Madrasah Temerloh</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="asset/img/madrasah/Madrasah-1.jpg"
+              class="img-fluid mb-4"
+              alt="Madrasah Plan Drawing"
+            >
+            <img
+              src="asset/img/madrasah/Madrasah-2.jpg"
+              class="img-fluid mb-4"
+              alt="Madrasah Plan Drawing"
+            >
+            <img
+              src="asset/img/madrasah/Madrasah-3.jpg"
+              class="img-fluid mb-4"
+              alt="Madrasah Plan Drawing"
+            >
+            <img
+              src="asset/img/madrasah/Madrasah-4.jpg"
+              class="img-fluid mb-4"
+              alt="Madrasah Plan Drawing"
+            >
+            <img
+              src="asset/img/madrasah/Madrasah-5.jpg"
+              class="img-fluid mb-4"
+              alt="Madrasah Plan Drawing"
+            >
+            <img
+              src="asset/img/madrasah/Madrasah-6.jpg"
+              class="img-fluid mb-4"
+              alt="Madrasah Plan Drawing"
+            >
+            <div class="text-center">
+              <p>Construction drawing for double-storey madrasah school project in Temerloh, Pahang</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-shoplot" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-4">
+          <div class="modal-header text-center border-0">
+            <h4 class="modal-title fw-bold w-100">Rawang Shoplot</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="asset/img/shoplot/Shoplot-2.jpg"
+              class="img-fluid mb-4"
+              alt="Rawang Shoplot MPS Plan Drawing"
+            >
+            <img
+              src="asset/img/shoplot/Shoplot-1.jpg"
+              class="img-fluid mb-4"
+              alt="Rawang Shoplot Bomba Plan Drawing"
+            >
+
+            <div class="text-center">
+              <p>Submission drawing to MPSelayang and Jabatan Bomba for a shoplot in Rawang, Selangor</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-factory" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-4">
+          <div class="modal-header text-center border-0">
+            <h4 class="modal-title fw-bold w-100">Subang Terrace Factory</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="asset/img/factory/Factory-1.jpg"
+              class="img-fluid mb-4"
+              alt="Subang Factory MBSA Plan Drawing"
+            >
+            <img
+              src="asset/img/factory/Factory-2.jpg"
+              class="img-fluid mb-4"
+              alt="Subang Factory MBSA Plan Drawing"
+            >
+            <img
+              src="asset/img/factory/Factory-3.jpg"
+              class="img-fluid mb-4"
+              alt="Subang Factory Bomba Plan Drawing"
+            >
+            <img
+              src="asset/img/factory/Factory-4.jpg"
+              class="img-fluid mb-4"
+              alt="Subang Factory Bomba Plan Drawing"
+            >
+            <div class="text-center">
+              <p>Submission drawing to MBSA and Jabatan Bomba for a terrace factory in Subang, Selangor</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
   <section id="audience" class="audience py-5">
     <div class="container">
       <h2 class="text-center mb-4">Who We Work With</h2>
 
-      <!-- single row with gutters; add more rows if you want -->
       <div class="row g-3 justify-content-center">
 
-        <!-- column: make it a flex container so card can stretch -->
         <div class="col-sm-6 col-md-4 d-flex">
           <div class="card h-100 text-center p-3 d-flex flex-column align-items-center">
             <div class="icon-wrap mb-2">
@@ -203,7 +383,7 @@
               <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Qualified Training</strong> <br>LAM-certified architecture graduates from University Malaya.</li>
               <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Certified Submissions</strong><br>Drawings endorsed by a registered architect.</li>
               <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Quick Delivery</strong><br>Full drawing set ready within weeks, not months.</li>
-              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Local Authority Coverage</strong><br>Submissions to MPK, MBSJ, MBSA, MBPJ, MPS, and MP Sepang and others within Lembah Klang.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Local Authority Coverage</strong><br>Submissions to MPK, MBSJ, MBSA, MBPJ, MPSelayang, MPSepang, Jabatan Bomba (JBPM) and others within Lembah Klang.</li>
               <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Affordable Quality</strong><br>Professional and quality service at reasonable price.</li>
               <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Accurate Drafting</strong><br>Technical drawings that meet industry & authority standards.</li>
               <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Time & Cost Efficient</strong><br>Prevent delays and avoid costly re-submissions.</li>
@@ -224,7 +404,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-             <span><strong>Drafting Plans</strong></span><span>from RM 1,200<i class="fa-solid fa-caret-down"></i></span>
+             <span><strong>Plan Drawing</strong></span><span>from RM 2,000<i class="fa-solid fa-caret-down"></i></span>
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -241,7 +421,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <span><strong>Plans & Submission</strong></span><span>from RM 3,500<i class="fa-solid fa-caret-down"></i></span>
+              <span><strong>Plans & Submission</strong></span><span>from RM 4,900<i class="fa-solid fa-caret-down"></i></span>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -259,7 +439,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <span><strong>Design, Plan & Submission</strong></span><span>from RM 4,800<i class="fa-solid fa-caret-down"></i></span>
+              <span><strong>Plan Drawing, 3D Design & Authority Submission</strong></span><span>from RM 7,900<i class="fa-solid fa-caret-down"></i></span>
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -271,6 +451,7 @@
                 <li> Up to 3 revisions</li>
                 <li> Delivery: 1–2 months</li>
               </ul>
+              <p>Click <a href="design.html#portfolio">here<a/> for more info of our 3D design service.</p>
             </div>
           </div>
         </div>
@@ -290,17 +471,23 @@
         <a href="https://wa.me/+60136796751" class="btn btn-primary">CONTACT US</a>
     </div>
     <div class="contact mt-5 text-muted text-center">
-      <p>Email: <a href="mailto:muniramerruddin@gmail.com">muniramerruddin@gmail.com</a> | WhatsApp: <a href="https://wa.me/60136796751">+6013-679 6751</a></p>
+      <p>Email: <a href="mailto:munir@markitek.my">munir@markitek.my</a> | WhatsApp: <a href="https://wa.me/60136796751">+6013-679 6751</a></p>
     </div>
   </div>
 </section>
 
 
-    <footer>
-        <p>&copy; 2025 Markitek. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; <span id="year"></span> MARKITEK. All rights reserved. <br><a href="privacy-policy.html">Privacy Policy</a></p> 
+</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 
 </body>
 </html>

@@ -27,6 +27,7 @@ p, li {
     /*font-weight: 600;  Slightly bold for readability */
 }
 
+
 .navbar a:hover {
     color: #a2d43d;
 }
@@ -105,6 +106,14 @@ header p {
     font-size: 1.2rem;
     color: #555; 
 }
+
+.navbar-nav p {
+    color: #fff;
+    margin: 0;
+    padding: 0.2em;
+    font-size: 1.4rem;
+}
+
 
 /*.hero h1, .hero h2, .hero h3, .hero h4, .hero p, .hero a {
     color: #fff;
@@ -292,4 +301,32 @@ strong {
   transform: translateY(-2px);
   color: #fff;
   border-color: #fff;
+}
+
+.modal-body {
+  overflow-y: auto;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: #555; /* thumb color */
+  border-radius: 4px;
+  border: 2px solid #f0f0f0; /* optional padding around thumb */
+}
+
+
+/* Scrollbar on hover (optional) */
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background-color: #333;
+}
+
+a {
+    color: #8BC34A;
+    text-decoration: none;
+}
+
+li, ul {
+    font-size: 1.3rem;
+    padding: 0.2em;
+    list-style: none;
+    padding-left: 0;
 }
