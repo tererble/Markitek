@@ -61,6 +61,10 @@ a.navbar-brand:hover {
     transition: 1s;
 }
 
+.language-toggle {
+    font-size: 1.3rem;
+}
+
 header {
     /*background: #fff; */
     background: url(asset/img/technical-drawing-background.png);
@@ -105,13 +109,6 @@ header p {
     margin: 10px 0 30px;
     font-size: 1.2rem;
     color: #555; 
-}
-
-.navbar-nav p {
-    color: #fff;
-    margin: 0;
-    padding: 0.2em;
-    font-size: 1.4rem;
 }
 
 
@@ -330,3 +327,4 @@ li, ul {
     list-style: none;
     padding-left: 0;
 }
+

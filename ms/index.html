@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10963362283"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-10963362283');
+    </script>
+
+    <!-- Event snippet for Click -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10963362283/QcmnCN6m9_0bEOvD3uso',
+          'value': 1000.0,
+          'currency': 'MYR',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+    <title>MARKITEK | Reka Bentuk & Lukisan Arkitek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <!-- Brand (always left) -->
+    <a class="navbar-brand me-auto" href="https://markitek.my">
+      MARKITEK
+    </a>
+
+    <!-- Hamburger (always right on mobile) -->
+    <button class="navbar-toggler order-2" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Language links (next to hamburger) -->
+    <div class="language-toggle d-flex align-items-center order-1 order-lg-3 me-2">
+      <a class="nav-link text-white-50 px-1" href="../index.html">EN</a>
+      <span class="text-white px-1">/</span>
+      <a class="nav-link px-1" href="#">BM</a>
+    </div>
+
+    <!-- Collapsible service links -->
+    <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNav">
+      <ul class="navbar-nav ms-lg-3">
+        <li class="nav-item px-2">
+          <a class="nav-link" href="index.html">Lukisan & Pengemukaan</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="design.html">Design 3D & Rendering</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+  <header class="hero">
+  	<div class="container">
+      <h1 class="text-center mt-5">Dari Lukisan ke Kelulusan, Kami Uruskan Untuk Anda</h1><br>
+      <h3 class="fw-light text-center">Kami menyediakan perkhidmatan lengkap lukisan pelan dan penghantaran ke pihak berkuasa <br> untuk memastikan projek pembinaan dan pengubahsuaian anda diluluskan tepat pada waktunya.</h3>
+      <div class="container d-flex justify-content-center align-items-center mt-5">
+        <a href="https://wa.me/+60136796751" onclick="return gtag_report_conversion('https://wa.me/60123456789');" class="btn btn-success">Mulakan Projek Anda</a><a href="#portfolio" class="btn btn-light d-none d-md-block">Lihat Projek Kami</a>
+      </div>
+      <h4 class="fw-light text-center mt-5">Servis di Kuala Lumpur & Selangor (Lembah Klang)</h4>
+    </div>
+  </header>
+
+  <section id="services">
+      <div class="container">
+          <h2 class="text-center">Perkhidmatan Kami</h2>
+          <div class="card-group justify-content-center">
+            <div class="card border-white align-items-center m-3 rounded-4 shadow">
+              <img src="../asset/img/w1.png" class="card-img-top img-fluid" alt="lukisan pelan">
+              <div class="card-body">
+                <h3 class="card-title text-center"><strong>Lukisan Pelan</strong></h3>
+                <p class="card-text text-center m-2">Lukisan teknikal, termasuk pelan lantai, pandangan sisi, seksyen, dan lukisan terperinci yang diperlukan.</p>
+              </div>
+            </div>
+            <div class="card border-white align-items-center m-3 rounded-4 shadow">
+              <img src="../asset/img/w3.png" class="card-img-top img-fluid" alt="penghantaran ke pihak berkuasa">
+              <div class="card-body">
+                <h3 class="card-title text-center"><strong>Penghantaran & Kelulusan</strong></h3>
+                <p class="card-text text-center  m-2">Menyediakan dokumen, lukisan, dan keperluan pihak berkuasa untuk penghantaran kepada pihak berkuasa tempatan bagi kelulusan.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="portfolio">
+      <div class="container">
+          <h2 class="text-center mb-3">Projek Contoh</h2>
+          <div class="row portfolio g-5">
+
+            <div class="col-md-6">
+              <div class="bg-white p-3 rounded-4 shadow">
+                <h3 class="text-center my-3"><strong>Rumah Sungai Buloh</strong></h3>
+                <img 
+                src="../asset/img/sungai-buloh-house-drawing.png" 
+                class="img-fluid" 
+                alt="Lukisan Pelan Rumah Sungai Buloh"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSungaiBulohHouse"
+                >
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bg-white p-3 rounded-4 shadow">
+                <h3 class="text-center my-3"><strong>Masjid Pangsenam, Temerloh</strong></h3>
+                <img 
+                src="../asset/img/temerloh-madrasah-submission-drawing.png" 
+                class="img-fluid" 
+                alt="Lukisan Pelan Masjid Pangsenam"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-madrasah"
+                >
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bg-white p-3 rounded-4 shadow">
+                <h3 class="text-center my-3"><strong>Kedai Rawang</strong></h3>
+                <img 
+                src="../asset/img/shoplot-stack.jpg" 
+                class="img-fluid" 
+                alt="Lukisan Pelan Kedai Rawang"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-shoplot"
+                >
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bg-white p-3 rounded-4 shadow">
+                <h3 class="text-center my-3"><strong>Kilang Teres Subang</strong></h3>
+                <img 
+                src="../asset/img/subang-factory-submission-drawing-majlis.png" 
+                class="img-fluid" 
+                alt="Lukisan Pelan Kilang Teres Subang"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-factory"
+                >
+              </div>                              
+            </div>
+
+          </div>
+      </div>
+  </section>
+
+  <section>
+  
+  <div class="modal fade" id="modalSungaiBulohHouse" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-4">
+        <div class="modal-header text-center border-0">
+          <h4 class="modal-title fw-bold w-100">Rumah Sungai Buloh</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="../asset/img/house/House-1.jpg"
+            class="img-fluid mb-4"
+            alt="Lukisan Pelan Rumah Sungai Buloh"
+          >
+          <img
+            src="../asset/img/house/House-2.jpg"
+            class="img-fluid mb-4"
+            alt="Lukisan Pelan Rumah Sungai Buloh"
+          >
+          <div class="text-center">
+            <p>Lukisan pelan pembinaan untuk projek rumah satu tingkat di lot persendirian, Sungai Buloh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-madrasah" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-4">
+        <div class="modal-header text-center border-0">
+          <h4 class="modal-title fw-bold w-100">Madrasah Temerloh</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="../asset/img/madrasah/Madrasah-1.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Madrasah">
+          <img src="../asset/img/madrasah/Madrasah-2.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Madrasah">
+          <img src="../asset/img/madrasah/Madrasah-3.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Madrasah">
+          <img src="../asset/img/madrasah/Madrasah-4.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Madrasah">
+          <img src="../asset/img/madrasah/Madrasah-5.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Madrasah">
+          <img src="../asset/img/madrasah/Madrasah-6.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Madrasah">
+          <div class="text-center">
+            <p>Lukisan pelan pembinaan untuk projek sekolah madrasah dua tingkat di Temerloh, Pahang</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-shoplot" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-4">
+        <div class="modal-header text-center border-0">
+          <h4 class="modal-title fw-bold w-100">Kedai Bertingkat Rawang</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="../asset/img/shoplot/Shoplot-2.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Kedai Rawang MPS">
+          <img src="../asset/img/shoplot/Shoplot-1.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Kedai Rawang Bomba">
+          <div class="text-center">
+            <p>Lukisan pelan untuk penyerahan kepada MPSelayang dan Jabatan Bomba bagi kedai bertingkat di Rawang, Selangor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-factory" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-4">
+        <div class="modal-header text-center border-0">
+          <h4 class="modal-title fw-bold w-100">Kilang Teres Subang</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="../asset/img/factory/Factory-1.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Kilang Subang MBSA">
+          <img src="../asset/img/factory/Factory-2.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Kilang Subang MBSA">
+          <img src="../asset/img/factory/Factory-3.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Kilang Subang Bomba">
+          <img src="../asset/img/factory/Factory-4.jpg" class="img-fluid mb-4" alt="Lukisan Pelan Kilang Subang Bomba">
+          <div class="text-center">
+            <p>Lukisan pelan untuk penyerahan kepada MBSA dan Jabatan Bomba bagi kilang teres di Subang, Selangor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  <section id="audience" class="audience py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Siapa Kami Bantu</h2>
+
+      <div class="row g-3 justify-content-center">
+
+        <div class="col-sm-6 col-md-4 d-flex">
+          <div class="card h-100 text-center p-3 d-flex flex-column align-items-center">
+            <div class="icon-wrap mb-2">
+              <i class="fa-solid fa-house fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><strong>Pemilik Rumah</strong></h3>
+              <p class="card-text">Membina, menambah, atau mengubahsuai rumah anda.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 d-flex">
+          <div class="card h-100 text-center p-3 d-flex flex-column align-items-center">
+            <div class="icon-wrap mb-2">
+              <i class="fa-solid fa-briefcase fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><strong>Pemilik Perniagaan</strong></h3>
+              <p class="card-text">Kedai & pejabat yang memerlukan kelulusan pihak berkuasa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 d-flex">
+          <div class="card h-100 text-center p-3 d-flex flex-column align-items-center">
+            <div class="icon-wrap mb-2">
+              <i class="fa-solid fa-trowel fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><strong>Kontraktor</strong></h3>
+              <p class="card-text">Memerlukan lukisan teknikal dan kelulusan pihak berkuasa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 d-flex">
+          <div class="card h-100 text-center p-3 d-flex flex-column align-items-center">
+            <div class="icon-wrap mb-2">
+              <i class="fa-solid fa-pen-ruler fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><strong>Arkitek & Pereka</strong></h3>
+              <p class="card-text">Outsource lukisan dan penghantaran untuk meningkatkan kapasiti kerja.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 d-flex">
+          <div class="card h-100 text-center p-3 d-flex flex-column align-items-center">
+            <div class="icon-wrap mb-2">
+              <i class="fa-solid fa-building fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><strong>Pembangun</strong></h3>
+              <p class="card-text">Projek kediaman & komersial kecil yang memerlukan kelulusan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 d-flex">
+          <div class="card h-100 text-center p-3 d-flex flex-column align-items-center">
+            <div class="icon-wrap mb-2">
+              <i class="fa-solid fa-sack-dollar fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><strong>Pelabur</strong></h3>
+              <p class="card-text">Menaik taraf atau menjual semula hartanah untuk keuntungan.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="strength" class="strength">
+      <div class="container strength-box col-md-5">
+          <h2 class="text-center">Mengapa Pilih Kami</h2>
+          <ul>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> 7 Tahun Pengalaman</strong><br>Pengalaman dalam projek kediaman, komersial dan industri.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Latihan Bertauliah</strong> <br>Graduan arkitek bertauliah LAM dari Universiti Malaya.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Penghantaran Disahkan</strong><br>Lukisan disahkan oleh arkitek berdaftar.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Penghantaran Cepat</strong><br>Set lengkap lukisan sedia dalam beberapa minggu, bukan bulan.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Liputan Pihak Berkuasa Tempatan</strong><br>Penghantaran ke MPK, MBSJ, MBSA, MBPJ, MPSelayang, MPSepang, Jabatan Bomba (JBPM) dan lain-lain di Lembah Klang.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Kualiti Mampu Milik</strong><br>Perkhidmatan profesional dan berkualiti pada harga berpatutan.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Lukisan Tepat</strong><br>Lukisan teknikal yang memenuhi standard industri & pihak berkuasa.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Jimat Masa & Kos</strong><br>Mencegah kelewatan dan mengelakkan penghantaran semula yang mahal.</li>
+              <li class="bg-white p-3 mb-2 border"><i class="fa-solid fa-square-check"></i><strong> Komunikasi Jelas</strong><br>Kemas kini terus dan proses telus dari mula hingga kelulusan.</li>
+          </ul>
+      </div>
+  </section>
+
+  <section id="pricing" class="pricing py-5">
+    <div class="container col-md-5">
+      <h2 class="text-center mb-1">Harga Kami</h2>
+      <p class="text-center text-muted">
+        Harga jelas, tiada caj tersembunyi.<br>
+      </p>
+      
+      <div class="accordion" id="accordionExample">
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             <span><strong>Konsep + Lukisan</strong></span><span>dari RM 1,800<i class="fa-solid fa-caret-down"></i></span>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li> Pelan lantai, seksyen, pandangan sisi (PDF & CAD)</li>
+                <li> Masa penghantaran: ~1 minggu</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <span><strong>Lukisan + Penghantaran</strong></span><span>dari RM 3,500<i class="fa-solid fa-caret-down"></i></span>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li> Set lengkap lukisan penghantaran (mengikut keperluan pihak berkuasa)</li>
+                <li> Mengurus borang & penghantaran kepada pihak berkuasa</li>
+                <li> Masa penghantaran: ~1 bulan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <span><strong>Pakej Penuh (Lukisan + 3D + Penghantaran)</strong></span><span>dari RM 6,000<i class="fa-solid fa-caret-down"></i></span>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li> Reka bentuk konsep + perspektif 3D</li>
+                <li> Set lengkap lukisan</li>
+                <li> Penghantaran kepada pihak berkuasa</li>
+                <li> Masa penghantaran: 1–2 bulan</li>
+              </ul>
+              <p>Klik <a href="design.html#portfolio">di sini</a> untuk maklumat lanjut mengenai perkhidmatan reka bentuk 3D kami.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-3 text-center text-muted">
+        <i>Sebutharga akhir akan diberikan selepas memahami butiran dan keperluan hartanah anda.</i>
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="final-cta">
+  <div class="container col-md-5 justify-content-center align-items-center">
+    <h2 class="text-center">Mulakan Projek Anda Hari Ini</h2>
+    <p class="text-center text-muted">Mari bincangkan projek anda atau dapatkan sebutharga.</p>
+    <div class="cta mt-3 text-center">
+        <a href="https://wa.me/+60136796751" onclick="return gtag_report_conversion('https://wa.me/60123456789');" class="btn btn-primary">HUBUNGI KAMI</a>
+    </div>
+    <div class="contact mt-5 text-muted text-center">
+      <p>Email: <a href="mailto:munir@markitek.my">munir@markitek.my</a> | WhatsApp: <a href="https://wa.me/60136796751"onclick="return gtag_report_conversion('https://wa.me/60123456789');" >+6013-679 6751</a></p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+    <p>&copy; <span id="year"></span> MARKITEK. Hak cipta terpelihara. <br><a href="privacy-policy.html">Polisi Privasi</a></p> 
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
